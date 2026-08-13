@@ -1,8 +1,8 @@
-name: Daily Discord Post
+name: Daily Not Working Post
 
 on:
   schedule:
-    - cron: "30 5 * * *"
+    - cron: "38 5 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,3 +17,4 @@ jobs:
           WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           curl -F "file1=@babka.jpeg" "$WEBHOOK_URL"
+
